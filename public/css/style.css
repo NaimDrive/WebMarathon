@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'aileronultralight';
+    src: url('font/aileron-ultralight-webfont.woff2') format('woff2'),
+         url('font/aileron-ultralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OCR A Extended';
+    src: url('font/OCRAExtended.eot');
+    src: url('font/OCRAExtended.eot?#iefix') format('embedded-opentype'),
+        url('font/OCRAExtended.woff2') format('woff2'),
+        url('font/OCRAExtended.woff') format('woff'),
+        url('font/OCRAExtended.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    padding-top: 80px;
+    background:  url('../img/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom center;
+    
+}
+
+
+.main-header{
+   
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color:#e6e6e6;
+}
+
+#main-menu{
+    position: absolute;
+    left: 20px;
+    top:20px;
+}
+
+#main-menu button{
+    border:none;
+    background: transparent;
+    transition: transform .4s ease;
+}
+
+
+
+#main-menu ul{
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+#main-menu ul li{
+    padding: 0;
+}
+#main-menu.open ul{
+    display: block;
+}
+#main-menu.open button{
+    transform: rotate(-90deg)
+}
+
+.homepage.card{
+    background: transparent;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.homepage .card-body{
+    
+    /*display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 150px;
+    margin-top:120px;
+    margin-bottom:120px;
+}
+
+.homepage .card-body li{
+   
+    flex-basis: 30%;
+}
+
+.card {
+    border:none;
+    margin-top: 100px;
+    
+}
+.first-footer{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    right:0;
+    
+}
+
+.second-footer {
+   text-align: center;
+   color:white;
+   margin-top:12px;
+}
+
+.card-body {
+
+    list-style-type: none; 
+}
+
+
+#auteur {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#titrehistoire {
+    text-align: center;
+    margin-top: 15px;
+    color:black;
+    font-weight: bold;
+    font-size: 0.95rem;
+
+}
+
+
+#logo {
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+
+#Miniature {
+    width: 100%;
+    
+    transition: transform 400ms ease-out;
+    transition :.5s ease;
+   
+}
+
+#Miniature:hover {
+    transform: scale(1.05);
+}
+
+#formulaire {
+    margin-top: 20px;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+#auteur {
+    font-size: 0.65rem;
+    text-align: center;
+    color:black;
+    text-decoration: underline;
+    
+}
+
+#auteur2 { 
+    text-decoration: black;
+}
+
+#hamburger {
+    width: 50%;
+}
+
+#miniaturechapitre {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:10px;
+
+}
+
+
+#hopeful {
+    width: 5%;
+    
+
+}
+
+#textechapitre {
+    color: white;
+    text-align: center;
+    margin-right: 300px;
+    margin-left: 300px;
+    font-family: 'aileronultralight';
+    font-size: 1.2rem;
+   margin-top: 400px;
+   
+   
+   
+    
+}
+    
+
+
+#histoiretext {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#navigation li a {
+    color:black;
+    font-size:1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+#navigation li  {
+    background-color: #e6e6e6;
+   
+}
+#reponse {
+    font-family: 'OCR A Extended';
+    width: 20rem;
+    color:white;
+    margin-right: 750px;
+    margin-left: 750px;
+   
+ 
+    
+}
+
+#textefinal {
+    position : absolute;
+    bottom : 70px;
+}
+
+#error {
+ width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
